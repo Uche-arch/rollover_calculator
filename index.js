@@ -10,4 +10,3 @@ function calculateRollover(){
     let returns = Math.pow(stakeOdds, rollover);
     document.getElementById("returns").innerHTML = `Wow!, after the gamble, you'll get ₦${returns.toLocaleString()} in return.`;
 }
-calculateRollover();
