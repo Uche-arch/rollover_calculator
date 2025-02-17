@@ -6,6 +6,6 @@ function calculateRollover(){
     let rollover = parseFloat(document.getElementById("rollover").value);
 
     let stakeOdds = stake * odds;
-    let returns = Math.pow(stakeOdds, rollover);
+    let returns = stakeOdds * (rollover + 1);
     document.getElementById("returns").innerHTML = `Wow!, after the gamble, you'll get ₦${returns.toLocaleString()} in return.`;
 }
