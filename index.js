@@ -1,11 +1,13 @@
 
 
 function calculateRollover(){
-    let stake = document.getElementById("stake").value;
-    let odds = document.getElementById("odds").value;
-    let rollover = document.getElementById("rollover").value;
+    let stake = parseFloat(document.getElementById("stake").value);
+    let odds = parseFloat(document.getElementById("odds").value);
+    let rollover = parseFloat(document.getElementById("rollover").value);
+    console.log(stake, odds, rollover);
 
     let stakeOdds = stake * odds;
     let returns = Math.pow(stakeOdds, rollover);
-    document.getElementById("returns").innerHTML = `Wow!, after the gamble, you'll get ₦${returns} in return.`
+    document.getElementById("returns").innerHTML = `Wow!, after the gamble, you'll get ₦${returns.toLocaleString()} in return.`;
 }
+calculateRollover();
