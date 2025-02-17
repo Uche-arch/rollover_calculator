@@ -1,0 +1,60 @@
+/*
+    This project is going to collect users initial stake;
+    collect users odds
+    colect users amount of rollovers
+
+    Then the algorithm will be, it multiplies the initial stake and the odd. then will be raised to the
+    value of the rollover
+*/
+
+body {
+  background-image: linear-gradient(135deg, red, green, blue);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rollover-card {
+  max-width: 600px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  backdrop-filter: blur(20px);
+  border: 2px solid black;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.rollover-card div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rollover-card div label {
+  font-size: 18px;
+}
+.rollover-card div input {
+  outline: none;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 50px;
+}
+.rollover-card button {
+  padding: 10px;
+  font-size: 18px;
+  background: gray;
+  border: none;
+  border-radius: 5px;
+}
+#returns {
+  font-size: 18px;
+  margin: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+  .rollover-card div {
+    display: flex;
+    flex-direction: column;
+  }
+}

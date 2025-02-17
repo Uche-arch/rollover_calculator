@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rollover Calculator</title>
+</head>
+<body>
+    <div class="rollover-card">
+        <div class="stake">
+            <label for="">Total Stake</label>
+            <input type="number" id="stake" placeholder="₦">
+        </div>
+        <div class="odds">
+            <label for="">Total Odds</label>
+            <input type="number" id="odds">
+        </div>
+        <div class="rollover">
+            <label for="">No. of Rollovers</label>
+            <input type="number" id="rollover">
+        </div>
+        <button onclick="calculateRollover()">Calculate Total Winnings</button>
+        <p id="returns"></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
