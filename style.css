@@ -8,7 +8,7 @@
 */
 
 body {
-  background-image: linear-gradient(135deg, red, green, blue);
+  background: #d9f7e7;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -23,7 +23,7 @@ body {
   backdrop-filter: blur(20px);
   border: 2px solid black;
   border-radius: 10px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.1);
 }
 .rollover-card div {
   display: flex;
